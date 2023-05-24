@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "1942 report";
+    src: url("1942.ttf"); /* Chemin vers mon fichier de police */
+}
+
+/* Styles généraux */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: '1942 report', sans-serif;
+    background-color: black; /* Fond noir */
+}
+  
+/* Styles du bandeau supérieur avec l'image */
+
+header {
+    background-image: url("image/masque.png");
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 300px; /* espace pour la barre de navigation */
+}
+
+
+/* Styles de la barre de navigation */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Largeur fixe pour tous les boutons */
+    height: 55px; /* Hauteur fixe pour tous les boutons */
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #8B6914; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+    font-size: 18px; /* Taille de la police */
+    font-family: '1942 report', sans-serif; /* Police Script */
+    border: 1px solid #8B6914; /* Bordure du bouton */
+    border-radius: 20px; /* Bords arrondis */
+    text-align: center; /* Centrage horizontal du texte */
+  }
+  
+nav ul li a:hover {
+    background-color: #8B6914;
+    color: black;
+}
+
+/* Styles pour les boîtes d'informations */
+.info-box {
+    background-color: rgba(0,0,0,0.5); /* Couleur de fond semi-transparente */
+    /* border: 1px solid #8B6914; */ /* Cette ligne est mise en commentaire */
+    border-radius: 20px; /* Bords arrondis */
+    color: #8B6914; /* Couleur du texte */
+    font-family: '1942 report', sans-serif; /* Police Script */
+    padding: 10px; /* Espace à l'intérieur de la boîte */
+    overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+.info-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.info-box1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 400px; /* Position depuis le haut, ajustez en fonction de vos besoins */
+    left: 2%; /* Position depuis la gauche, alignée avec la box6 */
+    text-align: center;
+    font-size: 20px; /* Taille de la police */
+}
+
+.info-box2 {
+    position: absolute;
+    width: 400px; /* Largeur plus grande */
+    height: 300px; /* Hauteur plus petite */
+    top: 500px; /* Position depuis le haut */
+    right: 2%; /* Position depuis la droite */
+    text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+    font-size: 20px; /* Taille de la police */
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 700px; /* Ajustez cette valeur selon vos besoins */
+}  
+
+.info-box3, .info-box4, .info-box5 {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; /* Ceci est nécessaire pour centrer correctement les éléments multi-lignes */
+    font-size: 20px; /* Taille de la police */
+}
+
+.info-box6 {
+    position: absolute;
+    top: 150px; /* Position depuis le haut, ajustez en fonction de vos besoins */
+    left: 3%; /* Position depuis la gauche, alignée avec la box1 */
+    width: 400px; /* Largeur de la box, ajustez en fonction de vos besoins */
+    height: auto; /* Hauteur automatique en fonction du contenu */
+    text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box6 h1 {
+    font-size: 2.5em; /* Taille du texte, ajustez en fonction de vos besoins */
+    font-family: '1942 report', sans-serif;
+    color: #8B6914; /* Couleur du texte */
+    padding: 15px; /* Espace à l'intérieur de la boîte */
+}

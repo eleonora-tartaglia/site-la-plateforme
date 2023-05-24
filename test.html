@@ -1,0 +1,235 @@
+code structure
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" type="text/css" href="laplateforme.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Qui se cache derrière nous ?</a></li>
+        <li><a href="#">Cursus</a></li>
+        <li><a href="#">Focus</a></li>
+        <li><a href="#">Corporation</a></li>
+        <li><a href="#">Generation 2.0</a></li>
+        <li><a href="#">Légendes Urbaines</a></li>
+        <li><a href="#">Canal confidentiel</a></li>
+      </ul>
+    </nav>
+    <div class="info-box info-box1">
+      <p>Campus numérique dissimulé parmi les courants<br />
+      mystérieux de la Méditerranée.<br /><br />
+      Des chemins d'apprentissage..<br />
+      des énigmes à résoudre sans frais..<br /><br />
+      accessibles à tous les codeurs de l'ombre,<br />
+      sans distinction de ressources ou de passé académique.</p>
+    </div>
+    <div class="info-box info-box2">
+      <p>Un espace de convergence<br />
+      entre Corporations et apprentis décodeurs..<br /><br />
+      L'ère du numérique est à nos portes, ne soyez pas en reste.<br /><br />
+      Les inscriptions sont ouvertes.. rejoignez-nous !</p>
+    </div>
+    <div class="info-box info-box3">
+      <p>Devenez un Développeur de l'Ombre : Développeur Web et Mobile, RNCP niveau 5 (BAC+2)
+      ou un Architecte de l'Invisible : Concepteur Développeur d’application, RNCP niveau 6 (BAC+3)<br /><br />
+      Quels que soient votre âge et votre passé, formez-vous gratuitement en 1 ou 2 ans 
+      aux arts secrets du développement web / mobile, grâce à un modèle pédagogique unique 
+      qui s’adapte aux besoins de chaque esprit unique. 
+      Saisissez l'opportunité de faire du numérique votre avenir.</p>
+    </div>
+    <div class="info-box info-box4">
+      <p>Devenez un Sorcier du Code : Développeur IA, Bachelor (BAC+3)
+      ou un Maître de la Matrice : Chef de projet IA, MSc (BAC+5)
+      ou encore un Mystérieux Jedi des Sphères Numériques : Post Graduate CentraleDigitaleLAB (BAC+6)<br /><br />
+      Vous êtes fasciné par les labyrinthes de data et accro aux algos ?
+      Rejoignez l'école de l'Intelligence Artificielle, 
+      un espace de formation avancé proposant deux parcours d'excellence 
+      pour former les futurs experts de l'IA et de la data.<br /><br />
+      La Plateforme propose également en partenariat avec l’école Centrale de Marseille, 
+      un Post Graduate en Intelligence Artificielle, une quête pour les plus audacieux.</p>
+    </div>
+    <div class="info-box info-box5">
+      <p>Devenez un Veilleur du Net : Développeur Sécurité, Bachelor (BAC+3)
+      ou un Gardien du Réseau : Administrateur Sécurité, Bachelor (BAC+3)
+      ou encore un Protecteur des Secrets Numériques : Responsable de la Protection des Données (DPO), MSc (BAC+5)<br /><br />
+      Les mystères de la sécurité informatique vous attirent inexorablement ?<br /><br /> 
+      Plongez dans l'inconnu avec nos trois programmes d'initiation pour devenir un maître de la Sécurité des Systèmes d'Information.</p>
+    </div>
+    <div class="info-box info-box6">
+      <h1>Ecole La Plateforme</h1>
+    </div>
+  </header>
+</body>
+</html>
+
+code style
+
+@font-face {
+  font-family: "1942 report";
+  src: url("1942.ttf"); /* Chemin vers mon fichier de police */
+}
+
+@font-face {
+  font-family: "OldNewspaperTypes";
+  src: url("OldNewspaperTypes.ttf"); /* Chemin vers mon fichier de police */
+}
+
+@font-face {
+  font-family: "Top Secret Stamp";
+  src: url("Top Secret Stamp.ttf"); /* Chemin vers mon fichier de police */
+}
+
+/* Styles généraux */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: '1942 report', sans-serif;
+  background-color: black; /* Fond noir */
+}
+
+/* Styles du bandeau supérieur avec l'image */
+
+header {
+  background-image: url("test.png");
+  height: 600px; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 300px; /* espace pour la barre de navigation */
+}
+
+
+/* Styles de la barre de navigation */
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px; /* Largeur fixe pour tous les boutons */
+  height: 55px; /* Hauteur fixe pour tous les boutons */
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #FEFEFE; /* Couleur du texte */
+  font-weight: bold; /* Texte en gras */
+  font-size: 18px; /* Taille de la police */
+  font-family: '1942 report', sans-serif; /* Police Script */
+  border: 1px solid #FEFEFE; /* Bordure du bouton */
+  border-radius: 20px; /* Bords arrondis */
+  text-align: center; /* Centrage horizontal du texte */
+}
+
+nav ul li a:hover {
+  background-color: #FEFEFE;
+  color: black;
+}
+
+/* Styles pour les boîtes d'informations */
+.info-box {
+  position: absolute;
+  width: 300px; /* Ajustez à la taille désirée */
+  height: 350px; /* Ajustez à la taille désirée */
+  background-color: rgba(0,0,0,0.5); /* Couleur de fond semi-transparente */
+  /* border: 1px solid #FEFEFE; */ /* Cette ligne est mise en commentaire */
+  border-radius: 20px; /* Bords arrondis */
+  color: #FEFEFE; /* Couleur du texte */
+  font-size: 15px; /* Taille de la police */
+  font-family: '1942 report', sans-serif; /* Police Script */
+  padding: 10px; /* Espace à l'intérieur de la boîte */
+  overflow: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+.info-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.info-box1 {
+  width: 280px; /* Largeur plus grande */
+  height: 300px; /* Hauteur plus petite */
+  top: 300px; /* Position depuis le haut */
+  left: 1.5%; /* Position depuis la gauche */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box2 {
+  width: 280px; /* Largeur plus grande */
+  height: 300px; /* Hauteur plus petite */
+  top: 600px; /* Position depuis le haut */
+  left: 1.5%; /* Position depuis la gauche */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box3 {
+  width: 250px; /* Largeur désirée */
+  height: 120px; /* Taille désirée */
+  top: 150px; /* Position depuis le haut */
+  right: 3%; /* Position depuis la droite */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box4 {
+  width: 250px; /* Largeur désirée */
+  height: 170px; /* Taille désirée */
+  top: 370px; /* Position depuis le haut */
+  right: 3%; /* Position depuis la droite */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box5 {
+  width: 250px; /* Largeur désirée */
+  height: 190px; /* Taille désirée */
+  top: 600px; /* Position depuis le haut */
+  right: 3%; /* Position depuis la droite */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box6 {
+  position: absolute;
+  top: 100px; /* Position depuis le haut, ajustez en fonction de vos besoins */
+  left: 1.5%; /* Position depuis la gauche, alignée avec la box1 */
+  width: 300px; /* Largeur de la box, ajustez en fonction de vos besoins */
+  height: auto; /* Hauteur automatique en fonction du contenu */
+  text-align: center; /* Centrage du texte à l'intérieur de la boîte */
+}
+
+.info-box6 h1 {
+  font-size: 3em; /* Taille du texte, ajustez en fonction de vos besoins */
+  font-family: '1942 report', sans-serif;
+  color: #FEFEFE; /* Couleur du texte */
+  padding: 10px; /* Espace à l'intérieur de la boîte */
+}
+
+
+body {
+  background: url('fumee.png') no-repeat center center fixed;
+  background-size: 100% 100%; /* Ajustement de la taille de l'image de fond */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

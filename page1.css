@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "1942 report";
+    src: url("1942.ttf"); /* Chemin vers mon fichier de police */
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fond noir */
+    color: #8B6914; /* Texte doré */
+    font-size: 18px; /* Taille de la police */
+    font-family: '1942 report', sans-serif; /* Police spécifique */
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styles pour les boîtes d'informations */
+.info-box {
+    background-color: rgba(18, 17, 13, 0.2); /* Fond semi-transparent */
+    border-radius: 10px; /* Bords arrondis */
+    color: #8B6914; /* Texte doré */
+    font-size: 18px; /* Taille de la police */
+    font-family: '1942 report', sans-serif; /* Police spécifique */
+    padding: 100px; /* Espace à l'intérieur de la box */
+    margin-bottom: 1px; /* Espace entre les box */
+    text-align: center;
+}
+
+.info-box h2 {
+    color: #8B6914; /* Couleur du texte */
+    font-size: 28px; /* Taille de la police */
+    margin-bottom: 50px; /* Espace en dessous du titre */
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+  
+.info-box2 img {
+    width: 800px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto; /* Permet de maintenir les proportions de l'image */
+    margin: 20px 0; /* Espace autour de l'image */
+}
+
+.info-box5 img {
+    width: 1000px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto; /* Permet de maintenir les proportions de l'image */
+    margin: 20px 0; /* Espace autour de l'image */
+}
+
+.top-section {
+    background-image: url('image/fumee.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-section {
+    background-image: url('image/fumee.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+}
